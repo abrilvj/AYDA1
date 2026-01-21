@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1768848347 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\ejercicios.cpp
+1768960348 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\ejercicios.cpp
 	<iostream>
 	<vector>
 	"ejercicios.h"
 
-1768848210 c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\ejercicios.h
+1768960350 c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\ejercicios.h
 	<vector>
 
-1768848395 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\main.cpp
+1768919272 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\main.cpp
 	<iostream>
 	<vector>
 	<algorithm>

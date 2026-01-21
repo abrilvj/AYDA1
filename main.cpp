@@ -97,7 +97,8 @@ void mostrarArreglo (vector<int> arreglo) {
 
 int main()
 {
-    vector<int> arreglo = {-1, 0, 2, 5, -7, 9};
+    vector<int> arreglo = {-1, 0, 2, 5, 7, 6, 5, 3};
+    vector<int> arreglob = {1, 4, 6, 8, 10, 11};
 
     //MergeSort(arreglo, 0, arreglo.size()-1);
 
@@ -125,6 +126,8 @@ int main()
                     cout << "minimo: " << minimo << " maximo: " << maximo << endl;
                     break; }
             case 4: cout << ejercicio4(arreglo, 0, arreglo.size()-1) << endl; break;
+            case 6: cout << ejercicio6(arreglo, arreglob) << endl; break;
+            case 7: cout << ejercicio7(arreglo, 0, arreglo.size()-1)<<endl; break;
             case 0: cout << "Saliendo..." << endl; break;
             default: cout << "Opcion no valida." << endl;
         }

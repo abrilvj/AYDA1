@@ -106,3 +106,69 @@ int ejercicio4 (vector<int>& arr, int izq, int der) {
 
     return max(sumaIzq, max(sumaDer, sumaCruz));
 }
+
+
+vector<int> Merge (vector<int>& leftArr,vector<int>& rightArr) {
+    int n1 = leftArr.size();
+    int n2 = rightArr.size();
+
+    vector<int> arr (n1 + n2); // definir siempre tamanio antes o usar .push_back() en vez de [] para agregar elementos
+
+    int i = 0;
+    int j = 0;
+    int k = 0;
+
+    while ((i < n1) && (j<n2)) {
+        if (leftArr[i] <= rightArr[j]) {
+            arr[k] = leftArr[i];
+            i++;
+        } else {
+            arr[k] = rightArr[j];
+            j++;
+        }
+        k++;
+    }
+
+    // copiar elementos restantes si hubiera
+    while (i<n1) {
+        arr[k] = leftArr[i];
+        i++;
+        k++;
+    }
+    while (j<n2) {
+        arr[k] = rightArr[j];
+        j++;
+        k++;
+    }
+
+    return arr;
+ }
+
+double ejercicio6(vector<int>& leftArr,vector<int>& rightArr) {
+    vector<int> resultado = Merge(leftArr, rightArr);
+
+    int n = leftArr.size() + rightArr.size();
+    if (n % 2 == 1)
+        return (double) resultado[n/2];
+    return (resultado[n/2 -1] + resultado[n/2]) / 2.0;
+ }
+
+
+int ejercicio7 (vector<int>& arr, int inicio, int fin) {
+    if (inicio > fin) {
+        return -1;
+    }
+
+    if (inicio == fin){
+        return arr[inicio];
+    }
+
+    int mid = inicio + (fin - inicio) / 2;
+
+    if (arr[mid] < arr[mid+1]){
+        return ejercicio7(arr, mid+1, fin);
+    } else {
+        return ejercicio7(arr,inicio, mid);
+    }
+
+}
