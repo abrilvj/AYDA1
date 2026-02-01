@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1769890421 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\greedy\greedy\main.cpp
+	<iostream>
+	<vector>
+	"ejercicios.h"
+
+1769890305 c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\greedy\greedy\ejercicios.h
+	<vector>
+
+1769887906 source:c:\users\juare\onedrive\escritorio\facultad\ayda\codigos\dyctps\greedy\greedy\ejercicios.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	"ejercicios.h"
+
